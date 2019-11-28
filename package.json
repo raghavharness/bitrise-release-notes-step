@@ -1,0 +1,24 @@
+{
+  "name": "bitrise-step-release-notes-extractor",
+  "version": "0.0.1",
+  "description": "With this step you can easily extract the last entry of your project's changelog to be used as release notes!",
+  "main": "release_notes_extractor.js",
+  "dependencies": {
+    "changelog-parser": "^2.8.0",
+    "child-process": "^1.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/areebgroup-open-source/bitrise-release-notes-step.git"
+  },
+  "author": "ashraf_007",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/areebgroup-open-source/bitrise-release-notes-step/issues"
+  },
+  "homepage": "https://gitlab.com/areebgroup-open-source/bitrise-release-notes-step#README"
+}
