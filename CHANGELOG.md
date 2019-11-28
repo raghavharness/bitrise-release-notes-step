@@ -5,3 +5,4 @@ All notable changes to this project will be documented in this file.
 ### Added
 - Release notes extractor
 - Changelog file input
+- Control flag for trimming the markdown output
