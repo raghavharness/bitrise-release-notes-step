@@ -2,6 +2,7 @@
 set -ex
 
 echo "* Changelog file path: $changelog_file_path"
+echo "* Keeping the markdown output: $keep_markdown_output"
 
 # Execute the extractor script
 echo "* Executing the release notes extractor"

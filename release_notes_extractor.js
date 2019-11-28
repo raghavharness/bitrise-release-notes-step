@@ -5,8 +5,6 @@ const outputEnvVar = "RELEASE_NOTES"
 let changelogFile = process.argv[2]
 let keepMarkdownOutput = process.argv[3].toLowerCase() == 'yes'
 
-console.log(keepMarkdownOutput)
-
 parseChangelog(changelogFile)
 
 function parseChangelog(filePath) {
