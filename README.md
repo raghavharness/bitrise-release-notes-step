@@ -1,0 +1,2 @@
+# bitrise-release-notes-step
+
