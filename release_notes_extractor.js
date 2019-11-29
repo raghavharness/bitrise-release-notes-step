@@ -3,7 +3,7 @@ const {execSync} = require('child_process')
 
 const outputEnvVar = "RELEASE_NOTES"
 let changelogFile = process.argv[2]
-let keepMarkdownOutput = process.argv[3].toLowerCase() == 'yes'
+let trimOutput = process.argv[3].toLowerCase() == "true"
 
 parseChangelog(changelogFile)
 
@@ -11,7 +11,7 @@ function parseChangelog(filePath) {
     parser(filePath)
         .then(content => {
             var releaseNotes = content['versions'][0]['body']
-            if (!keepMarkdownOutput) {
+            if (trimOutput) {
                 releaseNotes = trimChangeTypePrefixes(releaseNotes)
             }
             writeOutputEnvironmentVariable(releaseNotes)
