@@ -20,10 +20,10 @@ run_if: ""
 
 deps:
   brew:
-  - name: nodejs
+  - name: node
   apt_get:
   - name: nodejs
-
+  - name: npm
 
 toolkit:
   bash:
