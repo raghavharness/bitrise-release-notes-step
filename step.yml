@@ -20,11 +20,9 @@ run_if: ""
 
 deps:
   brew:
-  - name: git
-  - name: wget
+  - name: nodejs
   apt_get:
-  - name: git
-  - name: wget
+  - name: nodejs
 
 
 toolkit:
@@ -40,19 +38,19 @@ inputs:
       description: |
         - If it's in your project directory, just type the file's name.
         - If it's in a relative path to your project directory, type that relative file path.
-      is_required: false
+      is_required: true
 
-  - keep_markdown_output: "No"
+  - keep_markdown_output: No
     opts:
       title: "Keep markdown output untrimmed"
       summary: "Decides whether to keep the output release notes trimmed or not"
       description: |
         - If set to 'Yes', the output will remain exactly as in the changelog.
         - If set to 'No', the output will be trimmed of all '###' prefixes before change types.
-      is_required: false
+      is_required: true
       value_options:
-      - "Yes"
-      - "No"
+      - Yes
+      - No
 
 outputs:
   - RELEASE_NOTES:
