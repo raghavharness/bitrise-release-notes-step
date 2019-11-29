@@ -40,17 +40,17 @@ inputs:
         - If it's in a relative path to your project directory, type that relative file path.
       is_required: true
 
-  - keep_markdown_output: No
+  - trim_markdown_output: true
     opts:
-      title: "Keep markdown output untrimmed"
+      title: "Trim markdown output"
       summary: "Decides whether to keep the output release notes trimmed or not"
       description: |
-        - If set to 'Yes', the output will remain exactly as in the changelog.
-        - If set to 'No', the output will be trimmed of all '###' prefixes before change types.
+        - If set to 'true', the output will be trimmed of all '###' prefixes before change types.
+        - If set to 'false', the output will remain exactly as in the changelog.
       is_required: true
       value_options:
-      - Yes
-      - No
+      - true
+      - false
 
 outputs:
   - RELEASE_NOTES:
