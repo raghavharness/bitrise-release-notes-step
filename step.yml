@@ -6,7 +6,7 @@ description: |
   With this step you can easily extract the last entry of your project's changelog to be used as release notes!
 website: https://gitlab.com/areebgroup-open-source/bitrise-release-notes-step
 source_code_url: https://gitlab.com/areebgroup-open-source/bitrise-release-notes-step
-support_url: https://gitlab.com/areebgroup-open-source/bitrise-release-notes-step
+support_url: https://gitlab.com/areebgroup-open-source/bitrise-release-notes-step/issues
 host_os_tags:
   - osx-10.10
   - ubuntu-16.04
@@ -22,6 +22,9 @@ toolkit:
   bash:
     entry_file: step.sh
 
+deps:
+  apt_get:
+  - name: nodejs
 
 inputs:
   - changelog_file_path: "CHANGELOG.md"
@@ -31,6 +34,7 @@ inputs:
       description: |
         - If it's in your project directory, just type the file's name.
         - If it's in a relative path to your project directory, type that relative file path.
+        CHANGELOG.md format is expected to match the standards here keepachangelog.com.
       is_required: true
 
   - trim_markdown_output: true
