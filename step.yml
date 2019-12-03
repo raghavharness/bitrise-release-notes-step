@@ -33,7 +33,7 @@ inputs:
         CHANGELOG.md format is expected to match the standards here keepachangelog.com.
       is_required: true
 
-  - trim_markdown_output: "trim"
+  - trim_markdown_output: "Yes"
     opts:
       title: "Trim markdown output"
       summary: "Decides whether to keep the output release notes trimmed or not"
@@ -42,8 +42,8 @@ inputs:
         - If set to 'No', the output will remain exactly as in the changelog.
       is_required: true
       value_options:
-      - "trim"
-      - "keep"
+      - "Yes"
+      - "No"
 
 outputs:
   - RELEASE_NOTES:
