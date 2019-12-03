@@ -33,17 +33,17 @@ inputs:
         CHANGELOG.md format is expected to match the standards here keepachangelog.com.
       is_required: true
 
-  - trim_markdown_output: "true"
+  - trim_markdown_output: "Yes"
     opts:
       title: "Trim markdown output"
       summary: "Decides whether to keep the output release notes trimmed or not"
       description: |
-        - If set to 'true', the output will be trimmed of all '###' prefixes before change types.
-        - If set to 'false', the output will remain exactly as in the changelog.
+        - If set to 'Yes', the output will be trimmed of all '###' prefixes before change types.
+        - If set to 'No', the output will remain exactly as in the changelog.
       is_required: true
       value_options:
-      - "true"
-      - "false"
+      - "Yes"
+      - "No"
 
 outputs:
   - RELEASE_NOTES:
