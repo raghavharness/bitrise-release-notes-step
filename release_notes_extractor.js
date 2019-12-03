@@ -3,7 +3,7 @@ const {execSync} = require('child_process')
 
 const outputEnvVar = "RELEASE_NOTES"
 let changelogFile = process.argv[2]
-let trimOutput = process.argv[3].toLowerCase() == "true"
+let trimOutput = process.argv[3].toLowerCase() == "yes"
 
 parseChangelog(changelogFile)
 
