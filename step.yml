@@ -46,10 +46,15 @@ inputs:
       - "No"
 
 outputs:
-  - RELEASE_NOTES:
+  - EXTRACTED_RELEASE_NOTES:
     opts:
       title: "Release notes"
       summary: "The string value of the extracted release notes"
       description: |
-        This output will contain the string value of the release notes keeping it's format
-        as found in the Changelog just stripping the hashes before change categories.
+        This output will contain the string value of the release notes as found in the Changelog entry.
+  - EXTRACTED_VERSION_NAME:
+    opts:
+      title: "Version name"
+      summary: "The string value of the extracted version name"
+      description: |
+        This output will contain the version name as found in the Changelog entry.

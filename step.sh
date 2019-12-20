@@ -11,7 +11,6 @@ npm install --prefix $THIS_SCRIPT_DIR changelog-parser --save
 npm install --prefix $THIS_SCRIPT_DIR child-process --save
 
 # Execute the extractor script
-echo "* $keep_markdown_output"
 echo "* Executing the release notes extractor"
 
 set -x
