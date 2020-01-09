@@ -14,6 +14,6 @@ npm install --prefix $THIS_SCRIPT_DIR child-process --save
 echo "* Executing the release notes extractor"
 
 set -x
-node $THIS_SCRIPT_DIR/release_notes_extractor.js $changelog_file_path $trim_markdown_output
+node --experimental-modules $THIS_SCRIPT_DIR/release_notes_extractor.mjs $changelog_file_path $trim_markdown_output
 
 exit 0
