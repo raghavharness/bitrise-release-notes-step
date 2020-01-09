@@ -1,6 +1,6 @@
 {
   "name": "bitrise-step-release-notes-extractor",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "With this step you can easily extract the last entry of your project's changelog to be used as release notes!",
   "main": "release_notes_extractor.js",
   "dependencies": {

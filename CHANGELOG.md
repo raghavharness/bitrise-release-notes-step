@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [0.1.1] - 2020-01-09
+### Fixed
+- Execution of the extractor script in old nodejs versions
+
 ## [0.1.0] - 2019-12-19
 ### Fixed
 - Execution of the extractor script
