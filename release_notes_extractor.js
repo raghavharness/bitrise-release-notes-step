@@ -1,5 +1,5 @@
 const parser = require('changelog-parser')
-// const {execSync} = require('child_process')
+const {execSync} = require('child_process')
 
 const outputEnvVar = "RELEASE_NOTES"
 let changelogFile = process.argv[2]
@@ -24,8 +24,8 @@ function parseChangelog(filePath) {
 }
 
 function writeOutputEnvironmentVariable(releaseNotes) {
-    // execSync(`envman add --key ${outputEnvVar} --value "${releaseNotes}"`)
-    process.env.RELEASE_NOTES = releaseNotes;
+    execSync(`envman add --key ${outputEnvVar} --value "${releaseNotes}"`)
+    // process.env.RELEASE_NOTES = releaseNotes;
     console.log(`* Wrote the environment variable ${outputEnvVar} successfully!`)
 }
 
